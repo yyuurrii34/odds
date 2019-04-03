@@ -5,10 +5,10 @@
 #博客地址：https://blog.csdn.net/qq_34924407
 #yum源改为阿里云,清理缓存
 \cp -f /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo_bak_`date +"%Y_%m_%d_%H_%M_%S"`;
-wget -O /etc/yum.repos.d/CentOS-Base.repo https://mirrors.aliyun.com/repo/Centos-7.repo;
+#wget -O /etc/yum.repos.d/CentOS-Base.repo https://mirrors.aliyun.com/repo/Centos-7.repo;
 #yum clean all;
-yum  -y update;
-yum makecache;
+#yum  -y update;
+#yum makecache;
 
 #关闭Selinux
 \cp -f /etc/selinux/config /etc/selinux/config_bak_`date +"%Y_%m_%d_%H_%M_%S"`;
@@ -41,7 +41,6 @@ echo "
 # Disable netfilter on bridges.
 
 net.bridge.bridge-nf-call-ip6tables = 0
-
 net.bridge.bridge-nf-call-iptables = 0
 net.bridge.bridge-nf-call-arptables = 0
 #定义了系统中每一个端口最大的监听队列的长度,对于一个经常处理新连接的高负载web服务环境来说，默认的128太小了。
@@ -79,7 +78,7 @@ net.ipv6.conf.default.accept_ra_pinfo = 0
 net.ipv6.conf.default.accept_ra_defrtr = 0
 net.ipv6.conf.default.autoconf = 0
 net.ipv6.conf.default.dad_transmits = 0
-net.ipv6.conf.default.max_addresses = 1
+#net.ipv6.conf.default.max_addresses = 1
 # 开启execshild
 kernel.exec-shield = 1
 kernel.randomize_va_space = 1
@@ -111,7 +110,7 @@ net.ipv4.tcp_tw_recycle=1
 #开启重用。允许将TIME-WAITsockets重新用于新的TCP连接
 net.ipv4.tcp_tw_reuse=1 
 #合适4G的机器 内存大于4G或者小于4G可按情况调整
-net.ipv4.tcp_mem = 196608 262144 393216
+#net.ipv4.tcp_mem = 196608 262144 393216
 #（TCP连接最多约使用4GB内存）
 #net.ipv4.tcp_mem = 524288 699050 1048576
 net.ipv4.tcp_fin_timeout=5
