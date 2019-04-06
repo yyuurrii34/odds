@@ -4,7 +4,7 @@
 #转载请保住原作者信息： 心飞路漫
 #博客地址：https://blog.csdn.net/qq_34924407
 #yum源改为阿里云,清理缓存
-\cp -f /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo_bak_`date +"%Y_%m_%d_%H_%M_%S"`;
+#\cp -f /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo_bak_`date +"%Y_%m_%d_%H_%M_%S"`;
 #wget -O /etc/yum.repos.d/CentOS-Base.repo https://mirrors.aliyun.com/repo/Centos-7.repo;
 yum clean all;
 yum  -y update;
