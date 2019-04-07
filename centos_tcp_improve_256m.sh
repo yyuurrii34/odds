@@ -83,10 +83,10 @@ net.ipv6.conf.default.dad_transmits = 0
 kernel.exec-shield = 1
 kernel.randomize_va_space = 1
 # Tcp窗口等
-net.core.wmem_default=131072
-net.core.rmem_default=131072
-net.core.rmem_max = 131072
-net.core.wmem_max = 131072
+net.core.wmem_default=256960
+net.core.rmem_default=256960
+net.core.rmem_max = 256960
+net.core.wmem_max = 256960
 #每个网络接口接收数据包的速率比内核处理这些包的速率快时，允许送到队列的数据包的最大数目不要设的过大
 net.core.netdev_max_backlog=8192 
 #表示SYN队列的长度，默认为1024，加大队列长度为8192，可以容纳更多等待连接的网络连接数。
