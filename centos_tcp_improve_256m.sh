@@ -110,8 +110,8 @@ net.ipv4.tcp_tw_recycle=1
 #开启重用。允许将TIME-WAITsockets重新用于新的TCP连接
 net.ipv4.tcp_tw_reuse=1 
 #合适4G的机器 内存大于4G或者小于4G可按情况调整
-net.ipv4.tcp_mem = 12288 16384 24576
-#（TCP连接最多约使用4GB内存）
+#net.ipv4.tcp_mem = 12288 16384 24576
+#（TCP连接最多约使用256MB内存）
 net.ipv4.tcp_mem = 32768 43692 65536
 net.ipv4.tcp_fin_timeout=5
 
