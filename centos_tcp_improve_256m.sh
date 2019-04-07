@@ -126,6 +126,7 @@ net.ipv4.ip_local_port_range=1024 65000 
 " >/usr/lib/sysctl.d/00-system.conf;
 #生效
 sysctl -p;
+sysctl --system;
 #转载请保住原作者信息： 心飞路漫
 #博客地址：https://blog.csdn.net/qq_34924407
 
